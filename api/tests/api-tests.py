@@ -1,10 +1,6 @@
 import unittest
 import json
 
-
-from api import app
-
-
 class TestCases(unittest.TestCase):
     json_headers = {'Content-Type': 'application/json'}
 
@@ -90,8 +86,8 @@ class TestCases(unittest.TestCase):
             "ref_no": ref_no,
             "date": date,
 	    "price":price,
-            "source":source
-            "destination": destination
+            "source":source,
+            "destination":destination
         }
 
         return ride
